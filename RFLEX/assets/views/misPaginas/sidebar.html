@@ -1,0 +1,567 @@
+<!-- start: SIDEBAR -->
+<!-- <nav data-ng-include=" 'assets/views/partials/nav.html' "></nav> -->
+<!-- end: SIDEBAR -->
+
+
+
+
+<!-- start: SEARCH FORM -->
+<!--
+<div class="search-form">
+	<a class="s-open" href="#">
+		<i class="ti-search"></i>
+	</a>
+	<form class="navbar-form" role="search">
+		<a class="s-remove" href="#" ng-toggle-class="search-open" target=".navbar-form">
+			<i class="ti-close"></i>
+		</a>
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="{{ 'sidebar.search.PLACEHOLDER' | translate }}">
+			<button class="btn search-button" type="submit">
+				<i class="ti-search"></i>
+			</button>
+		</div>
+	</form>
+</div>
+-->
+<!-- end: SEARCH FORM -->
+
+
+
+
+
+
+
+
+
+<nav>
+<!-- start: MAIN NAVIGATION MENU -->
+
+
+
+
+
+
+
+<div class="navbar-title">
+	<span>Barra superior</span>
+</div>
+
+<ul class="main-navigation-menu">
+	<li ng-class="{'active open':$state.includes('app.ui')}">
+		<a href="javascript:void(0)">
+			<div class="item-content">
+				<div class="item-media">
+					<i class="fa fa-check-circle"></i>
+				</div>
+				<div class="item-inner">
+					<span class="title"> Permisos </span><i class="icon-arrow"></i>
+				</div>
+			</div>
+		</a>
+		<ul class="sub-menu">
+			<li ui-sref-active="active">
+				<a ui-sref="guia.barraSuperior.permisos">
+					<span class="title"> Permisos </span>
+				</a>
+			</li>
+		</ul>
+
+
+
+
+		<a href="javascript:void(0)">
+			<div class="item-content">
+				<div class="item-media">
+					<i class="fa fa-info-circle"></i>
+				</div>
+				<div class="item-inner">
+					<span class="title"> Orientación </span><i class="icon-arrow"></i>
+				</div>
+			</div>
+		</a>
+		<ul class="sub-menu">
+			<li ui-sref-active="active">
+				<a ui-sref="guia.barraSuperior.orientacion">
+					<span class="title"> Orientación </span>
+				</a>
+			</li>
+		</ul>
+
+
+
+
+		<a href="javascript:void(0)">
+			<div class="item-content">
+				<div class="item-media">
+					<i class="fa fa-list-alt"></i>
+				</div>
+				<div class="item-inner">
+					<span class="title"> Rotativa </span><i class="icon-arrow"></i>
+				</div>
+			</div>
+		</a>
+		<ul class="sub-menu">
+			<li ui-sref-active="active">
+				<a ui-sref="guia.barraSuperior.rotativaModificar">
+					<span class="title"> Modificar una rotativa </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.barraSuperior.rotativaCrear">
+					<span class="title"> Crear una nueva rotativa </span>
+				</a>
+			</li>
+		</ul>
+
+
+
+
+		<a href="javascript:void(0)">
+			<div class="item-content">
+				<div class="item-media">
+					<i class="fa fa-retweet"></i>
+				</div>
+				<div class="item-inner">
+					<span class="title"> Cambio de Turno </span><i class="icon-arrow"></i>
+				</div>
+			</div>
+		</a>
+		<ul class="sub-menu">
+			<li ui-sref-active="active">
+				<a ui-sref="guia.barraSuperior.cambioTurnoTrabajadores">
+					<span class="title"> entre trabajadores </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.barraSuperior.cambioTurnoServicio">
+					<span class="title"> con el servicio </span>
+				</a>
+			</li>
+		</ul>
+
+
+
+
+		<a href="javascript:void(0)">
+			<div class="item-content">
+				<div class="item-media">
+					<i class="ti-settings"></i>
+				</div>
+				<div class="item-inner">
+					<span class="title"> Opciones </span><i class="icon-arrow"></i>
+				</div>
+			</div>
+		</a>
+		<ul class="sub-menu">
+			<li ui-sref-active="active">
+				<a ui-sref="guia.barraSuperior.opcionSalir">
+					<span class="title"> Salir </span>
+				</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+
+
+
+
+
+
+
+<div class="navbar-title">
+	<span>Barra lateral</span>
+</div>
+
+<ul class="main-navigation-menu">
+	<li ng-class="{'active open':$state.includes('app.ui')}">
+		<a href="javascript:void(0)">
+			<div class="item-content">
+				<div class="item-media">
+					<i class="fa fa-table"></i>
+				</div>
+				<div class="item-inner">
+					<span class="title"> Vista Panorámica </span><i class="icon-arrow"></i>
+				</div>
+			</div>
+		</a>
+		<ul class="sub-menu">
+			<li ui-sref-active="active">
+				<a ui-sref="guia.barraLateral.vistaPanoramicaUso">
+					<span class="title"> Uso </span>
+				</a>
+			</li>
+		</ul>
+
+
+
+		<a href="javascript:void(0)">
+			<div class="item-content">
+				<div class="item-media">
+					<i class="fa fa-arrow-right"></i>
+				</div>
+				<div class="item-inner">
+					<span class="title"> Consulta Rápida </span><i class="icon-arrow"></i>
+				</div>
+			</div>
+		</a>
+		<ul class="sub-menu">
+			<li ui-sref-active="active">
+				<a ui-sref="guia.barraLateral.consultaRapidaTrabajador">
+					<span class="title"> por Trabajador </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.barraLateral.consultaRapidaTurno">
+					<span class="title"> por Turno </span>
+				</a>
+			</li>
+		</ul>
+
+
+
+
+		<a href="javascript:void(0)">
+			<div class="item-content">
+				<div class="item-media">
+					<i class="fa fa-users"></i>
+				</div>
+				<div class="item-inner">
+					<span class="title"> Dotaciones </span><i class="icon-arrow"></i>
+				</div>
+			</div>
+		</a>
+		<ul class="sub-menu">
+			<li ui-sref-active="active">
+				<a ui-sref="guia.barraLateral.dotacionAutorizada">
+					<span class="title"> Dotación autorizada por nivel de actividad </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.barraLateral.dotacionEfectiva">
+					<span class="title"> Dotación efectiva </span>
+				</a>
+			</li>
+		</ul>
+
+
+
+
+
+
+
+		<a href="javascript:void(0)">
+			<div class="item-content">
+				<div class="item-media">
+					<i class="fa fa-plus"></i>
+				</div>
+				<div class="item-inner">
+					<span class="title"> Turnos PT/OU/OE </span><i class="icon-arrow"></i>
+				</div>
+			</div>
+		</a>
+		<ul class="sub-menu">
+			<li ui-sref-active="active">
+				<a ui-sref="guia.barraLateral.turnoPartTime">
+					<span class="title"> Crear un turno Part-Time (PT) </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.barraLateral.turnoOtraUnidad">
+					<span class="title"> Crear un turno con personal de Otra Unidad (OU) </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.barraLateral.turnoOtroEstamento">
+					<span class="title"> Cubrir con un turno de personal de Otro Estamento (OE) </span>
+				</a>
+			</li>
+		</ul>
+
+
+
+
+
+
+		<a href="javascript:void(0)">
+			<div class="item-content">
+				<div class="item-media">
+					<i class="fa fa-file"></i>
+				</div>
+				<div class="item-inner">
+					<span class="title"> Reportes </span><i class="icon-arrow"></i>
+				</div>
+			</div>
+		</a>
+		<ul class="sub-menu">
+			<li ui-sref-active="active">
+				<a ui-sref="guia.barraLateral.reportePorFecha">
+					<span class="title"> por Fecha </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.barraLateral.reportePorTrabajador">
+					<span class="title"> por Trabajador </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.barraLateral.reporteTurnosExtra">
+					<span class="title"> de turnos Extra </span>
+				</a>
+			</li>
+		</ul>
+
+
+
+
+
+
+
+		<a href="javascript:void(0)">
+			<div class="item-content">
+				<div class="item-media">
+					<i class="fa fa-comment"></i>
+				</div>
+				<div class="item-inner">
+					<span class="title"> Notas </span><i class="icon-arrow"></i>
+				</div>
+			</div>
+		</a>
+		<ul class="sub-menu">
+			<li ui-sref-active="active">
+				<a ui-sref="guia.barraLateral.notasIntro">
+					<span class="title"> Introducción </span>
+				</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+
+
+
+
+
+
+
+
+<div class="navbar-title">
+	<span>rFlex Colaboradores</span>
+</div>
+
+<ul class="main-navigation-menu">
+	<li ng-class="{'active open':$state.includes('app.ui')}">
+		<a href="javascript:void(0)">
+			<div class="item-content">
+				<div class="item-media">
+					<i class="fa fa-flag-o"></i>
+				</div>
+				<div class="item-inner">
+					<span class="title"> Inicio </span><i class="icon-arrow"></i>
+				</div>
+			</div>
+		</a>
+		<ul class="sub-menu">
+			<li ui-sref-active="active">
+				<a ui-sref="guia.rFlexColaboradores.inicioRequerimientosMinimos">
+					<span class="title"> Requerimientos mínimos </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.rFlexColaboradores.inicioUsuarioPassword">
+					<span class="title"> Usuario y contraseña </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.rFlexColaboradores.inicioMenuOpciones">
+					<span class="title"> Menú de opciones </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.rFlexColaboradores.inicioSeguridad">
+					<span class="title"> Seguridad </span>
+				</a>
+			</li>
+		</ul>
+
+
+
+
+
+
+		<a href="javascript:void(0)">
+			<div class="item-content">
+				<div class="item-media">
+					<i class="ti-settings"></i>
+				</div>
+				<div class="item-inner">
+					<span class="title"> Funcionalidades </span><i class="icon-arrow"></i>
+				</div>
+			</div>
+		</a>
+		<ul class="sub-menu">
+			<li ui-sref-active="active">
+				<a ui-sref="guia.rFlexColaboradores.funcionalidadesTurnosPantalla">
+					<span class="title"> Mis turnos / Pantalla inicial </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.rFlexColaboradores.funcionalidadesDisponibilidad">
+					<span class="title"> Disponibilidad </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.rFlexColaboradores.funcionalidadesIntencionCambio">
+					<span class="title"> Intención de cambio </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.rFlexColaboradores.funcionalidadesPlanillas">
+					<span class="title"> Planillas (solo versión de escritorio) </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.rFlexColaboradores.funcionalidadesCambioTurno">
+					<span class="title"> Cambio de turno </span>
+				</a>
+			</li>
+		</ul>
+
+
+
+
+
+
+
+		<a href="javascript:void(0)">
+			<div class="item-content">
+				<div class="item-media">
+					<i class="fa fa-table"></i>
+				</div>
+				<div class="item-inner">
+					<span class="title"> Planilla de turnos </span><i class="icon-arrow"></i>
+				</div>
+			</div>
+		</a>
+		<ul class="sub-menu">
+			<li ui-sref-active="active">
+				<a ui-sref="guia.rFlexColaboradores.planillaTurnosCodigosColores">
+					<span class="title"> Códigos de colores </span>
+				</a>
+			</li>
+		</ul>
+
+
+
+
+
+
+
+		<a href="javascript:void(0)">
+			<div class="item-content">
+				<div class="item-media">
+					<i class="fa fa-retweet"></i>
+				</div>
+				<div class="item-inner">
+					<span class="title"> Cambio de Turno </span><i class="icon-arrow"></i>
+				</div>
+			</div>
+		</a>
+		<ul class="sub-menu">
+			<li ui-sref-active="active">
+				<a ui-sref="guia.rFlexColaboradores.cambioTurnoTrabajadores">
+					<span class="title"> entre trabajadores </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.rFlexColaboradores.cambioTurnoServicio">
+					<span class="title"> con el servicio </span>
+				</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+
+
+
+
+<div class="navbar-title">
+	<span>General</span>
+</div>
+<ul class="main-navigation-menu">
+	<li ng-class="{'active open':$state.includes('app.ui')}">
+		<a href="javascript:void(0)">
+			<div class="item-content">
+				<div class="item-media">
+					<i class="fa fa-question"></i>
+				</div>
+				<div class="item-inner">
+					<span class="title"> FAO </span><i class="icon-arrow"></i>
+				</div>
+			</div>
+		</a>
+		<ul class="sub-menu">
+			<li ui-sref-active="active">
+				<a ui-sref="guia.general.fao1">
+					<span class="title"> ¿Cómo agrego a una persona a la planilla? </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.general.fao2">
+					<span class="title"> ¿Cómo cambio la posición de una persona en la planilla? </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.general.fao3">
+					<span class="title"> ¿Cuál es la diferencia entre CT/DT y CTS/DTS? </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.general.fao4">
+					<span class="title"> ¿Cómo cambio a una persona de rotativa? </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.general.fao5">
+					<span class="title"> ¿Qué ocurre con las devoluciones, cambios y turnos extra al ingresar un permiso que los comprende? </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.general.fao6">
+					<span class="title"> Glosario </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.general.fao7">
+					<span class="title"> Códigos de colores </span>
+				</a>
+			</li>
+			<li ui-sref-active="active">
+				<a ui-sref="guia.general.fao8">
+					<span class="title"> ¿Cómo cambio de una planilla a otra? </span>
+				</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+
+
+
+
+
+<!-- end: MAIN NAVIGATION MENU -->
+
+<!-- start: DOCUMENTATION BUTTON -->
+<!--
+<div class="wrapper">
+	<a ui-sref="app.documentation" class="button-o">
+		<i class="ti-help"></i>
+		<span translate="sidebar.heading.DOCUMENTATION">Documentation</span>
+	</a>
+</div>
+-->
+<!-- end: DOCUMENTATION BUTTON -->
+</nav>
